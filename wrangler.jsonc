@@ -13,6 +13,16 @@
   ],
   "keep_vars": true,
   "upload_source_maps": true,
+  "routes": [
+    {
+      "pattern": "s.tianpeng.dev",
+      "custom_domain": true
+    }
+  ],
+  "vars": {
+    "NUXT_CF_ACCOUNT_ID": "77e355bb031ae797643a27a40d045b19",
+    "NUXT_HOME_URL": "https://tianpeng.dev"
+  },
   "observability": {
     "logs": {
       "enabled": true
@@ -34,15 +44,15 @@
   "kv_namespaces": [
     {
       "binding": "KV",
-      "preview_id": "ef93d42dc4b34969bab404d2e80f8dd3",
-      "id": "ef93d42dc4b34969bab404d2e80f8dd3" // IMPORTANT: Change this to your KV namespace ID
+      "preview_id": "404fc32b6be04eb89d54e65bcb101550",
+      "id": "404fc32b6be04eb89d54e65bcb101550"
     }
   ],
   "r2_buckets": [
     {
       "binding": "R2",
-      "preview_bucket_name": "sink",
-      "bucket_name": "sink" // IMPORTANT: Change this to your R2 bucket name, or create one with `wrangler r2 bucket create sink`
+      "preview_bucket_name": "sink-tianpeng",
+      "bucket_name": "sink-tianpeng"
     }
   ],
   "triggers": {
